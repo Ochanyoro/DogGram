@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CarouselView: View {
     
-    @State var selection: Int = 1
+    @State var selection: Int = 0
     @State var timerAdded: Bool = false
 
     let maxCount: Int = 8
