@@ -20,6 +20,8 @@
 		824DB380286ADD3300BAAE4B /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DB37F286ADD3300BAAE4B /* CommentsView.swift */; };
 		824DB382286AFD1100BAAE4B /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DB381286AFD1100BAAE4B /* MessageView.swift */; };
 		824DB384286AFE8D00BAAE4B /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DB383286AFE8D00BAAE4B /* CommentModel.swift */; };
+		824DB386286B097900BAAE4B /* Browse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DB385286B097900BAAE4B /* Browse.swift */; };
+		824DB388286B0A3300BAAE4B /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DB387286B0A3300BAAE4B /* CarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		824DB37F286ADD3300BAAE4B /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		824DB381286AFD1100BAAE4B /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		824DB383286AFE8D00BAAE4B /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		824DB385286B097900BAAE4B /* Browse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browse.swift; sourceTree = "<group>"; };
+		824DB387286B0A3300BAAE4B /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				824DB362286AAC0A00BAAE4B /* ContentView.swift */,
 				824DB376286AC83800BAAE4B /* FeedView.swift */,
 				824DB37F286ADD3300BAAE4B /* CommentsView.swift */,
+				824DB385286B097900BAAE4B /* Browse.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			children = (
 				824DB378286AC8FD00BAAE4B /* PostView.swift */,
 				824DB381286AFD1100BAAE4B /* MessageView.swift */,
+				824DB387286B0A3300BAAE4B /* CarouselView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -210,10 +216,12 @@
 				824DB363286AAC0A00BAAE4B /* ContentView.swift in Sources */,
 				824DB382286AFD1100BAAE4B /* MessageView.swift in Sources */,
 				824DB375286AC6EA00BAAE4B /* Extensions.swift in Sources */,
+				824DB386286B097900BAAE4B /* Browse.swift in Sources */,
 				824DB37E286AD7DF00BAAE4B /* PostArrayObject.swift in Sources */,
 				824DB379286AC8FD00BAAE4B /* PostView.swift in Sources */,
 				824DB384286AFE8D00BAAE4B /* CommentModel.swift in Sources */,
 				824DB380286ADD3300BAAE4B /* CommentsView.swift in Sources */,
+				824DB388286B0A3300BAAE4B /* CarouselView.swift in Sources */,
 				824DB361286AAC0A00BAAE4B /* DogGramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
