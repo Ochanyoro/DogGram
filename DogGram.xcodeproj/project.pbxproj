@@ -24,6 +24,7 @@
 		824DB388286B0A3300BAAE4B /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DB387286B0A3300BAAE4B /* CarouselView.swift */; };
 		824DB38A286B132600BAAE4B /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DB389286B132600BAAE4B /* ImageGridView.swift */; };
 		8296AC37286B499700267598 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC36286B499700267598 /* UploadView.swift */; };
+		8296AC39286B4DE800267598 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC38286B4DE800267598 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		824DB387286B0A3300BAAE4B /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		824DB389286B132600BAAE4B /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageGridView.swift; path = DogGram/Views/Subviews/ImageGridView.swift; sourceTree = SOURCE_ROOT; };
 		8296AC36286B499700267598 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
+		8296AC38286B4DE800267598 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8296AC3A286B634D00267598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		824DB35F286AAC0A00BAAE4B /* DogGram */ = {
 			isa = PBXGroup;
 			children = (
+				8296AC3A286B634D00267598 /* Info.plist */,
 				824DB37A286AD26500BAAE4B /* Model */,
 				824DB373286AC6CD00BAAE4B /* Helpers */,
 				824DB370286AC49300BAAE4B /* Views */,
@@ -124,6 +128,7 @@
 				824DB381286AFD1100BAAE4B /* MessageView.swift */,
 				824DB387286B0A3300BAAE4B /* CarouselView.swift */,
 				824DB389286B132600BAAE4B /* ImageGridView.swift */,
+				8296AC38286B4DE800267598 /* ImagePicker.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				824DB384286AFE8D00BAAE4B /* CommentModel.swift in Sources */,
 				824DB380286ADD3300BAAE4B /* CommentsView.swift in Sources */,
 				8296AC37286B499700267598 /* UploadView.swift in Sources */,
+				8296AC39286B4DE800267598 /* ImagePicker.swift in Sources */,
 				824DB388286B0A3300BAAE4B /* CarouselView.swift in Sources */,
 				824DB361286AAC0A00BAAE4B /* DogGramApp.swift in Sources */,
 			);
@@ -362,6 +368,9 @@
 				DEVELOPMENT_TEAM = GQZ24SVQ96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DogGram/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This App uses the camera at the user's request to take a photo.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This App the app to access the photo library to import or save a photo user's request.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -393,6 +402,9 @@
 				DEVELOPMENT_TEAM = GQZ24SVQ96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DogGram/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This App uses the camera at the user's request to take a photo.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This App the app to access the photo library to import or save a photo user's request.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
