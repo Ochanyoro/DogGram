@@ -25,6 +25,7 @@
 		824DB38A286B132600BAAE4B /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DB389286B132600BAAE4B /* ImageGridView.swift */; };
 		8296AC37286B499700267598 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC36286B499700267598 /* UploadView.swift */; };
 		8296AC39286B4DE800267598 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC38286B4DE800267598 /* ImagePicker.swift */; };
+		8296AC3C286B6AC100267598 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC3B286B6AC100267598 /* PostImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8296AC36286B499700267598 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		8296AC38286B4DE800267598 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8296AC3A286B634D00267598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8296AC3B286B6AC100267598 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				824DB37F286ADD3300BAAE4B /* CommentsView.swift */,
 				824DB385286B097900BAAE4B /* BrowseView.swift */,
 				8296AC36286B499700267598 /* UploadView.swift */,
+				8296AC3B286B6AC100267598 /* PostImageView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			files = (
 				824DB377286AC83800BAAE4B /* FeedView.swift in Sources */,
 				824DB37C286AD28000BAAE4B /* PostModel.swift in Sources */,
+				8296AC3C286B6AC100267598 /* PostImageView.swift in Sources */,
 				824DB363286AAC0A00BAAE4B /* ContentView.swift in Sources */,
 				824DB382286AFD1100BAAE4B /* MessageView.swift in Sources */,
 				824DB375286AC6EA00BAAE4B /* Extensions.swift in Sources */,
