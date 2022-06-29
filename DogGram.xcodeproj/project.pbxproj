@@ -32,6 +32,7 @@
 		8296AC44286BCFF200267598 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC43286BCFF200267598 /* SettingsLabelView.swift */; };
 		8296AC46286BD28D00267598 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC45286BD28D00267598 /* SettingsRowView.swift */; };
 		8296AC48286BDE9A00267598 /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC47286BDE9A00267598 /* SettingsEditTextView.swift */; };
+		8296AC4A286BEC3800267598 /* SettingsEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC49286BEC3800267598 /* SettingsEditImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		8296AC43286BCFF200267598 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		8296AC45286BD28D00267598 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		8296AC47286BDE9A00267598 /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
+		8296AC49286BEC3800267598 /* SettingsEditImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				8296AC3D286B7B0D00267598 /* ProfileView.swift */,
 				8296AC41286BC83100267598 /* SettingsView.swift */,
 				8296AC47286BDE9A00267598 /* SettingsEditTextView.swift */,
+				8296AC49286BEC3800267598 /* SettingsEditImageView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				8296AC3E286B7B0D00267598 /* ProfileView.swift in Sources */,
 				824DB379286AC8FD00BAAE4B /* PostView.swift in Sources */,
 				824DB384286AFE8D00BAAE4B /* CommentModel.swift in Sources */,
+				8296AC4A286BEC3800267598 /* SettingsEditImageView.swift in Sources */,
 				824DB380286ADD3300BAAE4B /* CommentsView.swift in Sources */,
 				8296AC40286B7C2C00267598 /* ProfileHeaderView.swift in Sources */,
 				8296AC37286B499700267598 /* UploadView.swift in Sources */,
