@@ -33,6 +33,7 @@
 		8296AC46286BD28D00267598 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC45286BD28D00267598 /* SettingsRowView.swift */; };
 		8296AC48286BDE9A00267598 /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC47286BDE9A00267598 /* SettingsEditTextView.swift */; };
 		8296AC4A286BEC3800267598 /* SettingsEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC49286BEC3800267598 /* SettingsEditImageView.swift */; };
+		8296AC4C286C63C900267598 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296AC4B286C63C900267598 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		8296AC45286BD28D00267598 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		8296AC47286BDE9A00267598 /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
 		8296AC49286BEC3800267598 /* SettingsEditImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditImageView.swift; sourceTree = "<group>"; };
+		8296AC4B286C63C900267598 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				8296AC41286BC83100267598 /* SettingsView.swift */,
 				8296AC47286BDE9A00267598 /* SettingsEditTextView.swift */,
 				8296AC49286BEC3800267598 /* SettingsEditImageView.swift */,
+				8296AC4B286C63C900267598 /* SignUpView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				824DB37C286AD28000BAAE4B /* PostModel.swift in Sources */,
 				8296AC44286BCFF200267598 /* SettingsLabelView.swift in Sources */,
 				8296AC3C286B6AC100267598 /* PostImageView.swift in Sources */,
+				8296AC4C286C63C900267598 /* SignUpView.swift in Sources */,
 				824DB363286AAC0A00BAAE4B /* ContentView.swift in Sources */,
 				824DB382286AFD1100BAAE4B /* MessageView.swift in Sources */,
 				824DB375286AC6EA00BAAE4B /* Extensions.swift in Sources */,
