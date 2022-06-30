@@ -10,10 +10,11 @@ import SwiftUI
 struct OnboardingView: View {
     
     @Environment(\.presentationMode) var presentationMode
-    @State var showOnboardingPart2 : Bool = false
+    @State var showOnboardingPart2: Bool = false
     
     var body: some View {
-        VStack(spacing: 10){
+        VStack(spacing: 10) {
+            
             Image("logo.transparent")
                 .resizable()
                 .scaledToFit()
@@ -39,20 +40,23 @@ struct OnboardingView: View {
                     .frame(height: 60)
                     .frame(maxWidth: .infinity)
             })
-
+            
             Button(action: {
                 showOnboardingPart2.toggle()
             }, label: {
                 HStack {
-                    Image(systemName: "globe")
                     
+                    Image(systemName: "globe")
+                        
                     Text("Sign in with Google")
+                    
                 }
                 .frame(height: 60)
                 .frame(maxWidth: .infinity)
                 .background(Color(.sRGB, red: 222/255, green: 82/255, blue: 70/255, opacity: 1.0))
-                .cornerRadius(4)
-                .font(.system(size: 23, weight: .medium))
+                .cornerRadius(6)
+                .font(.system(size: 23, weight: .medium, design: .default))
+                
             })
             .accentColor(Color.white)
             
@@ -63,8 +67,10 @@ struct OnboardingView: View {
                     .font(.headline)
                     .fontWeight(.medium)
                     .padding()
+                    
             })
             .accentColor(.black)
+            
         }
         .padding(.all, 20)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -73,6 +79,7 @@ struct OnboardingView: View {
         .fullScreenCover(isPresented: $showOnboardingPart2, content: {
             OnboardingViewPart2()
         })
+
     }
 }
 

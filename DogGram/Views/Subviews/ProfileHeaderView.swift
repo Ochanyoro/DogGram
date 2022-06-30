@@ -27,14 +27,16 @@ struct ProfileHeaderView: View {
                 .fontWeight(.bold)
             
             // MARK: BIO
-            Text("ここはバイオのためのところだよ！！")
+            Text("Text in here for the bio!")
                 .font(.body)
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
             
+            
             HStack(alignment: .center, spacing: 20, content: {
-                VStack(alignment: .center, spacing: 6, content: {
-                    // MARK: POSTS
+                
+                // MARK: POSTS
+                VStack(alignment: .center, spacing: 5, content: {
                     Text("5")
                         .font(.title2)
                         .fontWeight(.bold)
@@ -43,15 +45,13 @@ struct ProfileHeaderView: View {
                         .fill(Color.gray)
                         .frame(width: 20, height: 2, alignment: .center)
                     
-                   
                     Text("Posts")
                         .font(.callout)
                         .fontWeight(.medium)
                 })
                 
                 // MARK: LIKES
-                VStack(alignment: .center, spacing: 6, content: {
-                    // MARK: POSTS
+                VStack(alignment: .center, spacing: 5, content: {
                     Text("20")
                         .font(.title2)
                         .fontWeight(.bold)
@@ -60,12 +60,13 @@ struct ProfileHeaderView: View {
                         .fill(Color.gray)
                         .frame(width: 20, height: 2, alignment: .center)
                     
-                   
                     Text("Likes")
                         .font(.callout)
                         .fontWeight(.medium)
                 })
+                
             })
+            
         })
         .frame(maxWidth: .infinity)
         .padding()
@@ -74,7 +75,7 @@ struct ProfileHeaderView: View {
 
 struct ProfileHeaderView_Previews: PreviewProvider {
     
-    @State static var name: String = "Osan"
+    @State static var name: String = "Joe"
     
     static var previews: some View {
         ProfileHeaderView(profileDisplayName: $name)

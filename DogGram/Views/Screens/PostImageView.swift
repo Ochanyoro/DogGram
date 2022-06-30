@@ -10,11 +10,15 @@ import SwiftUI
 struct PostImageView: View {
     
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.colorScheme) var colorScheme
+    
     @State var captionText: String = ""
     @Binding var imageSelected: UIImage
     
+    
     var body: some View {
         VStack(alignment: .center, spacing: 0, content: {
+            
             HStack {
                 Button(action: {
                     presentationMode.wrappedValue.dismiss()
@@ -29,6 +33,7 @@ struct PostImageView: View {
             }
             
             ScrollView(.vertical, showsIndicators: false, content: {
+                
                 Image(uiImage: imageSelected)
                     .resizable()
                     .scaledToFill()
@@ -40,34 +45,39 @@ struct PostImageView: View {
                     .padding()
                     .frame(height: 60)
                     .frame(maxWidth: .infinity)
-                    .background(Color.MyTheme.beigeColor)
+                    .background(colorScheme == .light ? Color.MyTheme.beigeColor : Color.MyTheme.purpleColor)
                     .cornerRadius(12)
                     .font(.headline)
                     .padding(.horizontal)
                     .autocapitalization(.sentences)
                 
-                Button(action: { postPicture() }, label: {
-                    Text("写真を投稿")
+                Button(action: {
+                    postPicture()
+                }, label: {
+                    Text("Post Picture!".uppercased())
                         .font(.title3)
                         .fontWeight(.bold)
                         .padding()
+                        .frame(height: 60)
                         .frame(maxWidth: .infinity)
-                        .background(Color.MyTheme.purpleColor)
+                        .background(colorScheme == . light ? Color.MyTheme.purpleColor : Color.MyTheme.yellowColor)
                         .cornerRadius(12)
                         .padding(.horizontal)
-                        
                 })
-                .accentColor(Color.MyTheme.yellowColor)
+                .accentColor(colorScheme == .light ? Color.MyTheme.yellowColor : Color.MyTheme.purpleColor)
+                
             })
+            
         })
+
     }
-    
     
     // MARK: FUNCTIONS
-    func postPicture(){
-        print("データベースに写真を投稿")
-        
+    
+    func postPicture() {
+        print("POST PICTURE TO DATABASE HERE")
     }
+    
 }
 
 struct PostImageView_Previews: PreviewProvider {

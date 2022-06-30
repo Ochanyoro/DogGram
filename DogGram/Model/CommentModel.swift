@@ -15,7 +15,7 @@ struct CommentModel: Identifiable, Hashable {
     var userID: String // ID for the user in the Database
     var username: String // username for the user in the Database
     var content: String
-    var dateCreated: Date
+    var dateCreate: Date
     
     
     func hash(into hasher: inout Hasher) {

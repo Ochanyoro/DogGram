@@ -16,14 +16,14 @@ struct BrowseView: View {
             CarouselView()
             ImageGridView(posts: posts)
         })
-        .navigationTitle("Browse")
+        .navigationBarTitle("Browse")
         .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct BrowseView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
+        NavigationView {
             BrowseView()
         }
     }

@@ -17,11 +17,11 @@ struct UploadView: View {
     
     @State var showPostImageView: Bool = false
         
-    //@Environment(\.colorScheme) var colorScheme
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         ZStack {
-            VStack(spacing: 0) {
+            VStack {
                 
                 Button(action: {
                     sourceType = UIImagePickerController.SourceType.camera
@@ -50,8 +50,8 @@ struct UploadView: View {
             }
             .sheet(isPresented: $showImagePicker, onDismiss: segueToPostImageView, content: {
                 ImagePicker(imageSelected: $imageSelected, sourceType: $sourceType)
-                    //.preferredColorScheme(colorScheme)
-                    //.accentColor(colorScheme == .light ? Color.MyTheme.purpleColor : Color.MyTheme.yellowColor)
+                    .preferredColorScheme(colorScheme)
+                    .accentColor(colorScheme == .light ? Color.MyTheme.purpleColor : Color.MyTheme.yellowColor)
             })
             
             Image("logo.transparent")
@@ -61,7 +61,7 @@ struct UploadView: View {
                 .shadow(radius: 12)
                 .fullScreenCover(isPresented: $showPostImageView, content: {
                     PostImageView(imageSelected: $imageSelected)
-                        //.preferredColorScheme(colorScheme)
+                        .preferredColorScheme(colorScheme)
                 })
                 
         }
@@ -70,6 +70,7 @@ struct UploadView: View {
     }
     
     // MARK: FUNCTIONS
+    
     func segueToPostImageView() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             showPostImageView.toggle()

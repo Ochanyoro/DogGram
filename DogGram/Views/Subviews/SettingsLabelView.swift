@@ -15,11 +15,10 @@ struct SettingsLabelView: View {
     var body: some View {
         VStack {
             HStack {
+                
                 Text(labelText)
                     .fontWeight(.bold)
-                
                 Spacer()
-                
                 Image(systemName: labelImage)
             }
             
@@ -31,7 +30,7 @@ struct SettingsLabelView: View {
 
 struct SettingsLabelView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsLabelView(labelText: "TEST Label", labelImage: "heart")
+        SettingsLabelView(labelText: "Test Label", labelImage: "heart")
             .previewLayout(.sizeThatFits)
     }
 }

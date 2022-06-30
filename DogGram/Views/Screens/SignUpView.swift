@@ -15,29 +15,28 @@ struct SignUpView: View {
         VStack(alignment: .center, spacing: 20, content: {
             
             Spacer()
-            
             Image("logo.transparent")
                 .resizable()
-                .scaledToFill()
+                .scaledToFit()
                 .frame(width: 100, height: 100, alignment: .center)
             
-            Text("サインインしていません 🥲 ")
+            Text("You're not signed in! 🙁")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .lineLimit(1)
                 .minimumScaleFactor(0.5)
                 .foregroundColor(Color.MyTheme.purpleColor)
             
-            Text("アカウント作成のために下のボタンを押してください")
+            Text("Click the button below to create an account and join the fun!")
                 .font(.headline)
                 .fontWeight(.medium)
                 .multilineTextAlignment(.center)
-            
+                .foregroundColor(Color.MyTheme.purpleColor)
             
             Button(action: {
                 showOnboarding.toggle()
             }, label: {
-                Text("サインイン/サインアップ")
+                Text("Sign in / Sign up".uppercased())
                     .font(.headline)
                     .fontWeight(.bold)
                     .padding()
@@ -51,6 +50,7 @@ struct SignUpView: View {
             
             Spacer()
             Spacer()
+            
         })
         .padding(.all, 40)
         .background(Color.MyTheme.yellowColor)
@@ -65,5 +65,6 @@ struct SignUpView: View {
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         SignUpView()
+            .preferredColorScheme(.dark)
     }
 }

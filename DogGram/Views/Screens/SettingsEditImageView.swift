@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct SettingsEditImageView: View {
-    
-    @State var submissionText: String = ""
+
     @State var title: String
     @State var description: String
-    @State var selectedImage: UIImage
+    @State var selectedImage: UIImage // Image shown on this screen
     @State var sourceType: UIImagePickerController.SourceType = UIImagePickerController.SourceType.photoLibrary
     
     @State var showImagePicker: Bool = false
@@ -20,7 +19,7 @@ struct SettingsEditImageView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             
-            HStack{
+            HStack {
                 Text(description)
                 Spacer(minLength: 0)
             }
@@ -31,7 +30,6 @@ struct SettingsEditImageView: View {
                 .frame(width: 200, height: 200, alignment: .center)
                 .clipped()
                 .cornerRadius(12)
-            
             
             Button(action: {
                 showImagePicker.toggle()
@@ -52,7 +50,7 @@ struct SettingsEditImageView: View {
 
             
             Button(action: {
-                showImagePicker.toggle()
+                
             }, label: {
                 Text("Save".uppercased())
                     .font(.title3)
@@ -66,17 +64,19 @@ struct SettingsEditImageView: View {
             .accentColor(Color.MyTheme.yellowColor)
             
             Spacer()
+            
         }
         .padding()
         .frame(maxWidth: .infinity)
-        .navigationTitle(title)
+        .navigationBarTitle(title)
     }
+
 }
 
 struct SettingsEditImageView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
-            SettingsEditImageView(title: "title", description: "description", selectedImage: UIImage(named: "dog1")!)
+        NavigationView {
+            SettingsEditImageView(title: "Title", description: "Desciption", selectedImage: UIImage(named: "dog1")!)
         }
     }
 }

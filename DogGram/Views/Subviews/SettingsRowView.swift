@@ -15,7 +15,9 @@ struct SettingsRowView: View {
     
     var body: some View {
         HStack {
+            
             ZStack {
+                
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
                     .fill(color)
                 
@@ -33,6 +35,7 @@ struct SettingsRowView: View {
             Image(systemName: "chevron.right")
                 .font(.headline)
                 .foregroundColor(.primary)
+            
         }
         .padding(.vertical, 4)
     }
@@ -40,7 +43,7 @@ struct SettingsRowView: View {
 
 struct SettingsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsRowView(leftIcon: "heart.fill", text: "row title", color: .red)
+        SettingsRowView(leftIcon: "heart.fill", text: "Row Title", color: .red)
             .previewLayout(.sizeThatFits)
     }
 }

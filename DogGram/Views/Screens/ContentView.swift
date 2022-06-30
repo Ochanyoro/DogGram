@@ -9,50 +9,56 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var currentUserID: String? = nil
+    @Environment(\.colorScheme) var colorScheme
+    
+    var currentUserID: String? = "user"
     
     var body: some View {
-        TabView{
+        TabView {
             NavigationView {
                 FeedView(posts: PostArrayObject(), title: "Feed")
             }
-                .tabItem{
+                .tabItem {
                     Image(systemName: "book.fill")
                     Text("Feed")
                 }
-            NavigationView{
+            
+            NavigationView {
                 BrowseView()
             }
-                .tabItem{
+                .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Browse")
                 }
+            
             UploadView()
-                .tabItem{
+                .tabItem {
                     Image(systemName: "square.and.arrow.up.fill")
                     Text("Upload")
                 }
-            
-            ZStack{
+
+            ZStack {
                 if currentUserID != nil {
-                    NavigationView{
-                        ProfileView(isMyProfile: true, profileDisplayName: "my profile", profileUserID: "")
+                    NavigationView {
+                        ProfileView(isMyProfile: true, profileDisplayName: "My Profile", profileUserID: "")
                     }
                 } else {
                     SignUpView()
                 }
             }
-            .tabItem{
-                Image(systemName: "person.fill")
-                Text("Profile")
-            }
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Profile")
+                }
+
         }
-        .accentColor(Color.MyTheme.purpleColor)
+        .accentColor(colorScheme == .light ? Color.MyTheme.purpleColor : Color.MyTheme.yellowColor)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }

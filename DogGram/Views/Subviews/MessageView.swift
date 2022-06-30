@@ -12,11 +12,9 @@ struct MessageView: View {
     @State var comment: CommentModel
     
     var body: some View {
-        
-        
-        
         HStack {
-            //MARK: PROFILE IMAGE
+            
+            // MARK: PROFILE IMAGE
             Image("dog1")
                 .resizable()
                 .scaledToFill()
@@ -25,27 +23,29 @@ struct MessageView: View {
             
             VStack(alignment: .leading, spacing: 4, content: {
                 
-                //MARK: PROFILE NAME
+                // MARK: USER NAME
                 Text(comment.username)
                     .font(.caption)
                     .foregroundColor(.gray)
                 
-                //MARK: PROFILE CONTENT
+                // MARK: CONTENT
                 Text(comment.content)
-                    .padding(.all, 6)
+                    .padding(.all, 10)
                     .foregroundColor(.primary)
                     .background(Color.gray)
                     .cornerRadius(10)
+                
             })
             
             Spacer(minLength: 0)
+            
         }
     }
 }
 
 struct MessageView_Previews: PreviewProvider {
     
-    static var comment:CommentModel = CommentModel(commentID: "", userID: "", username: "Ochan", content: "この写真めっちゃいいね", dateCreated: Date())
+    static var comment: CommentModel = CommentModel(commentID: "", userID: "", username: "Joe Green", content: "This photo is really cool. haha", dateCreate: Date())
     
     static var previews: some View {
         MessageView(comment: comment)

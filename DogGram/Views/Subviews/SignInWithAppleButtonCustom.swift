@@ -15,6 +15,6 @@ struct SignInWithAppleButtonCustom: UIViewRepresentable {
         return ASAuthorizationAppleIDButton(authorizationButtonType: .default, authorizationButtonStyle: .black)
     }
     
-    func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) {}
+    func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) { }
     
 }

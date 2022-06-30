@@ -9,20 +9,24 @@ import SwiftUI
 
 struct OnboardingViewPart2: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    
     @State var displayName: String = ""
     @State var showImagePicker: Bool = false
     
+    // For image picker
     @State var imageSelected: UIImage = UIImage(named: "logo")!
     @State var sourceType: UIImagePickerController.SourceType = .photoLibrary
     
     var body: some View {
         VStack(alignment: .center, spacing: 20, content: {
-            Text("名前を入力してください")
+            
+            Text("What's your name?")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(Color.MyTheme.yellowColor)
             
-            TextField("ここに名前を入力してください", text: $displayName)
+            TextField("Add your name here...", text: $displayName)
                 .padding()
                 .frame(height: 60)
                 .frame(maxWidth: .infinity)
@@ -48,23 +52,28 @@ struct OnboardingViewPart2: View {
             .accentColor(Color.MyTheme.purpleColor)
             .opacity(displayName != "" ? 1.0 : 0.0)
             .animation(.easeOut(duration: 1.0))
+            
         })
-        .frame(maxWidth: .infinity,maxHeight: .infinity)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.MyTheme.purpleColor)
         .edgesIgnoringSafeArea(.all)
-        .sheet(isPresented: $showImagePicker, onDismiss: createprofile, content: {
+        .sheet(isPresented: $showImagePicker, onDismiss: createProfile, content: {
             ImagePicker(imageSelected: $imageSelected, sourceType: $sourceType)
         })
+        
     }
     
-    //MARK: FUNCTIONS
-    func createprofile(){
+    // MARK: FUNCTIONS
+    
+    func createProfile() {
         print("CREATE PROFILE NOW")
     }
+    
 }
 
 struct OnboardingViewPart2_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingViewPart2()
+            
     }
 }
